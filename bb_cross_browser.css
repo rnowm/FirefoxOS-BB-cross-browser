@@ -1,0 +1,26 @@
+/* buttons */
+button,
+a[role="button"],
+.button {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+button.danger,
+a[role="button"].danger,
+.button.danger {
+  background-image: none;
+}
+
+/* headers */
+section[role="region"] > header:first-child input[type="text"] {
+  box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+  line-height: 3rem;
+}
+
+section[role="region"] > header:first-child menu[type="toolbar"] a,
+section[role="region"] > header:first-child menu[type="toolbar"] button {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}

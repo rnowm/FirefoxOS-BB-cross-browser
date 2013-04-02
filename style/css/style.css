@@ -1,0 +1,111 @@
+@font-face {
+  font-family: "mozTT";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/moztt_regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/moztt_regular-webfont.woff") format("woff"), url("../fonts/moztt_regular-webfont.ttf") format("truetype"), url("../fonts/moztt_regular-webfont.svg#mozttregular") format("svg");
+}
+@font-face {
+  font-family: "mozTT";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/moztt_light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/moztt_light-webfont.woff") format("woff"), url("../fonts/moztt_light-webfont.ttf") format("truetype"), url("../fonts/moztt_light-webfont.svg#moztt_lightregular") format("svg");
+}
+@font-face {
+  font-family: "mozTT";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/moztt_medium-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/moztt_medium-webfont.woff") format("woff"), url("../fonts/moztt_medium-webfont.ttf") format("truetype"), url("../fonts/moztt_medium-webfont.svg#moztt_mediumregular") format("svg");
+}
+
+html, body {
+  font-family: "mozTT", sans-serif;
+  font-size: 10px;
+  font-weight: normal;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0iaGF0MCIgZ3JhZGllbnRVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giIHgxPSI1MCUiIHkxPSIxMDAlIiB4Mj0iNTAlIiB5Mj0iLTEuNDIxMDg1NDcxNTIwMmUtMTQlIj4KPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzI5MjkyZiIgc3RvcC1vcGFjaXR5PSIxIi8+CjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzNkM2Q0NSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgIDwvbGluZWFyR3JhZGllbnQ+Cgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0idXJsKCNoYXQwKSIgLz4KPC9zdmc+");
+  display: block;
+  margin-bottom: 30px;
+  overflow: hidden;
+  padding: 15px 30px 5px 30px;
+}
+
+header h1 {
+  color: #FFFFFF;
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 45px;
+  margin: 0;
+  padding: 0;
+  text-shadow: 1px 2px 8px rgba(0, 0, 0, 0.75);
+}
+
+header h2 {
+  color: #C5C5C5;
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 30px;
+  padding: 0;
+  margin: 0 0 10px 0;
+  text-shadow: 1px 2px 8px rgba(0, 0, 0, 0.75);
+}
+
+header p {
+  color: #C5C5C5;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  width: 270px;
+  margin: 0 0 0 30px;
+  padding: 0;
+  float: left;
+}
+
+nav .compact > li button {
+  cursor: pointer;
+}
+
+nav .compact > li:last-child {
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+nav .compact > li button:hover {
+  background: #ccc;
+}
+
+nav .compact > li button.selected {
+  border-color: #008aaa;
+  background: #008aaa;
+  color: #fff;
+  text-shadow: 0 -0.1rem 0 rgba(0,0,0,0.3);
+}
+
+#phone-frame {
+	background: url("../images/phone_frame.png") 0 -20px no-repeat;
+	height: 700px;
+	position: relative;
+	width: 400px;
+  margin-left: 330px;
+}
+
+#phone-content {
+  position: relative;
+  height: 480px;
+  width: 320px;
+  left: 36px;
+  top: 43px;
+  border: none;
+}

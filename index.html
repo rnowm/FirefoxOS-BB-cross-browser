@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="gaia-building-blocks/style/buttons.css" />
+    <link rel="stylesheet" href="style/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Firefox OS Building Blocks</h1>
+      <h2>The missing cross browser <span>*</span> css file</h2>
+      <p>* Supported ie 9, Firefox 18, Chrome 24, Safari 5.1</p>
+    </header>
+    <nav id="menu">
+      <ul class="compact">
+        <li><button onclick="changeSource('http://localhost:8888/github/FirefoxOS-BB-cross-browser/gaia-building-blocks/style/action_menu/index.html')" class="selected">Action menu</button></li>
+        <li><button onclick="changeSource('http://localhost:8888/github/FirefoxOS-BB-cross-browser/gaia-building-blocks/style/buttons/index.html')">Buttons</button></li>
+        <li><button onclick="changeSource('http://localhost:8888/github/FirefoxOS-BB-cross-browser/gaia-building-blocks/style/confirm/index.html')">Confirm</button></li>
+        <li><button onclick="changeSource('http://localhost:8888/github/FirefoxOS-BB-cross-browser/gaia-building-blocks/style/confirm/content.html')">Confirm with content</button></li>
+        <li><button onclick="changeSource('http://localhost:8888/github/FirefoxOS-BB-cross-browser/gaia-building-blocks/style/edit_mode/index.html')">Edit mode</button></li>
+        <li><button onclick="changeSource('http://localhost:8888/github/FirefoxOS-BB-cross-browser/gaia-building-blocks/style/headers/index.html')">Headers</button></li>
+        <li><button onclick="changeSource('http://localhost:8888/github/FirefoxOS-BB-cross-browser/gaia-building-blocks/style/input_areas/index.html')">Input areas</button></li>
+        <li><button onclick="changeSource('http://localhost:8888/github/FirefoxOS-BB-cross-browser/gaia-building-blocks/style/status/index.html')">Status</button></li>
+        <li><button onclick="changeSource('http://localhost:8888/github/FirefoxOS-BB-cross-browser/gaia-building-blocks/style/switches/index.html')">Switches</button></li>
+        <li><button onclick="changeSource('http://localhost:8888/github/FirefoxOS-BB-cross-browser/gaia-building-blocks/style_unstable/drawer/index.html')">Drawer</button></li>
+        <li><button onclick="changeSource('http://localhost:8888/github/FirefoxOS-BB-cross-browser/gaia-building-blocks/style_unstable/lists/index.html')">Lists</button></li>
+        <li><button onclick="changeSource('http://localhost:8888/github/FirefoxOS-BB-cross-browser/gaia-building-blocks/style_unstable/progress_activity/index.html')">Progress and activity</button></li>
+        <li><button onclick="changeSource('http://localhost:8888/github/FirefoxOS-BB-cross-browser/gaia-building-blocks/style_unstable/seekbars/index.html')">Seekbars</button></li>
+        <li><button onclick="changeSource('http://localhost:8888/github/FirefoxOS-BB-cross-browser/gaia-building-blocks/style_unstable/tabs/index.html')">Tabs</button></li>
+        <li><button onclick="changeSource('http://localhost:8888/github/FirefoxOS-BB-cross-browser/gaia-building-blocks/style_unstable/tabs/filters.html')">Filters</button></li>
+        <li><button onclick="changeSource('http://localhost:8888/github/FirefoxOS-BB-cross-browser/gaia-building-blocks/style_unstable/toolbars/index.html')">Toolbars</button></li>
+
+      </ul>
+    </nav>
+    <section id="phone-frame">
+      <iframe id="phone-content" src="gaia-building-blocks/style/headers/index.html"></iframe>
+    </section>
+
+    <script>
+      //link style.css inside iframe
+      var cssLink = document.createElement("link") 
+      cssLink.href = "bb_cross_browser.css"; 
+      cssLink.rel = "stylesheet"; 
+      cssLink .type = "text/css"; 
+      frames["phone-content"].document.body.appendChild(cssLink);
+
+      //change iframe on nav item click
+      function changeSource(newSource) {
+        document.getElementById("phone-content").src = newSource;
+        document.getElementById("menu").getElementsByClassName("selected")[0].className = "";
+        event.target.className = "selected";
+      }
+
+    </script>
+  </body>
+</html>
